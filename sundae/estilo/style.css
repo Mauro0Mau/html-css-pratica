@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+/* Importameto das fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');/*font-family: 'Amatic SC', sans-serif;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');/*font-family: 'Gruppo', sans-serif;*/
+
+@font-face{
+    font-family: 'Sundae';
+    src: url('../fonte/Ice\ Cream.otf') format('opentype');
+    font-weight: normal;
+}
+
+/*Fim dos importamentos de fontes*/
+
+:root{
+    --cor-1: #A07D5D;
+    --cor-2: #D4C2B8;
+    --cor-3: #5B3F3B;
+    --cor-4: #503338;
+    --cor-5: #64554d;
+
+    --fonte-pricipal: 'Amatic SC', sans-serif;
+    --fonte-sundae:'Sundae', sans-serif;
+}
+
