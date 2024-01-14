@@ -30,8 +30,7 @@
 }
 
 header{
-    background-image: url(../imagens/sundae-wallpaper-2.png);
-    background-position: ;
+    background-image: linear-gradient(to bottom, var(--cor-1), var(--cor-2));
     max-width: 100em;
     padding: 5px;
     text-align: center;
