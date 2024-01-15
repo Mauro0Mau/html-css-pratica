@@ -14,11 +14,28 @@
 /*Fim dos importamentos de fontes*/
 
 :root{
-    --cor-1: #A07D5D;
+
+    /*Palera Marrom*/
+    --cor-1: #763F31;
     --cor-2: #D4C2B8;
     --cor-3: #5B3F3B;
     --cor-4: #503338;
     --cor-5: #64554d;
+
+
+    /*Paleta Rosa*/
+    --cor-1r: #f9c0c2;
+    --cor-2r: #FAA7AE;
+    --cor-3r: #F78594;
+    --cor-4r: #FDD9DD;
+    --cor-5r: #df6f82;
+
+    /*Palera Branca*/
+    --cor-1b:#984620;
+    --cor-2b:#F9D67F;
+    --cor-3b:#F6D16A;
+    --cor-4b:#FDF0C9;
+    --cor-5b:#FCE3A3;
 
     --fonte-pricipal: 'Amatic SC', sans-serif;
     --fonte-sundae:'Sundae', sans-serif;
@@ -29,17 +46,38 @@
     margin: 0px;
 }
 
+html, body{
+    background: linear-gradient(-45deg, var(--cor-2b), var(--cor-1), var(--cor-2r));
+    animation: mygradient 2s ease infinite;
+}
+
+@keyframes mygradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 header{
-    background-image: linear-gradient(to bottom, var(--cor-1), var(--cor-2));
-    max-width: 100em;
+    background-color: var(--cor-2);
+    max-width: 120em;
     padding: 5px;
     text-align: center;
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(0, 0, 0, 0.104);
+    border-bottom-style: solid;
+    box-shadow: 0px 2px 8px rgb(0 0 0 / 35%);
 }
 
 header h1{
     font-family: var(--fonte-sundae);
     font-weight: normal;
-    font-size: 2.5em;
+    font-size: 6vw;
     padding: 10px;
 }
 
@@ -53,6 +91,7 @@ header a{
     text-decoration: none;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
 }
 
 main{
