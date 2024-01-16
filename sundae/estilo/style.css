@@ -37,7 +37,7 @@
     --cor-4b:#FDF0C9;
     --cor-5b:#FCE3A3;
 
-    --fonte-pricipal: 'Amatic SC', sans-serif;
+    --fonte-principal: 'Amatic SC', sans-serif;
     --fonte-sundae:'Sundae', sans-serif;
 }
 
@@ -73,8 +73,8 @@ header h1{
     border-radius: 15px;
 }
 
-header p{
-    font-family: var(--fonte-pricipal);
+header h2{
+    font-family: var(--fonte-principal);
     font-weight: bold;
     margin-bottom: 10px;
     font-size: 3.5vw;
@@ -94,14 +94,21 @@ header a{
 }
 
 header a:hover{
-    background-color: var(--cor-2);
+    background-color: rgb(255, 255, 255);
+    color: black;
 }
 
 main{
-    background-color: var(--cor-2);
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
     max-width: 70em;
     margin: auto;
-    padding: 10px;
+}
+
+main h1{
+    font-family: var(--fonte-principal);
+    font-size: 2em;
+    text-align: center;
 }
 
 img{
@@ -109,10 +116,111 @@ img{
     margin: auto;
 }
 
+article h2{
+    font-size: 2em;
+    margin: 10px 0px;
+    font-family: var(--fonte-principal);
+    text-align: center;
+}
+
+article.morango{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--cor-3r);
+    font-size: 1.3em;
+    text-align: justify;
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+article.chocolate{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--cor-3);
+    font-size: 1.3em;
+    text-align: justify;
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+article.baunilha{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--cor-3b);
+    font-size: 1.3em;
+    text-align: justify;
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+aside h1{
+    font-size: 2em;
+}
+
+aside{
+    margin-top: 10px;
+    border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    text-align: justify;
+    padding: 20px;
+    background-image: linear-gradient(to right, var(--cor-5r),var(--cor-5r), var(--cor-4),var(--cor-4), rgb(254, 179, 40),rgb(254, 179, 40),var(--cor-2b), var(--cor-2b));
+}
+
+article.adicionais{
+    margin-top: 10px;
+    background-color: #FCE3A3;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+article h3{
+    background-image: linear-gradient(to right, var(--cor-3b), transparent);
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+article p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    text-align: justify;
+    padding: 20px;
+}
+
+article.curiosidades{
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 20px;
+    background-image: linear-gradient(-45deg, var(--cor-4r),var(--cor-1r), var(--cor-2r), var(--cor-3r));
+    font-size: 1.4em;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-position: inside;
+}
+
 footer{
-    background-color: var(--cor-4);
+    background-color: var(--cor-4r);
+    margin-top: 10px;
+    text-align: center;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 footer p{
     margin: 0px;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: 1s;
+}
+
+footer a:hover{
+    border-radius: 10px;
+    padding: 5px;
+    background-color: var(--cor-5);
+    text-shadow:  0px 0px 9px rgb(255, 255, 255);
+    color: white;
 }
