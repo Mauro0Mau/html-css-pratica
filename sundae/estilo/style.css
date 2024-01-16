@@ -47,45 +47,37 @@
 }
 
 html, body{
-    background: linear-gradient(to top, var(--cor-2b), var(--cor-1), var(--cor-2r));
-    animation: mygradient 2s ease infinite;
-}
-
-@keyframes mygradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+    background: var(--cor-1r) url(../imagens/icecream-wallpaper.jpg) center center no-repeat fixed;
+    background-size: cover;
 }
 
 header{
-    background: linear-gradient(to left, rgba(255, 112, 136, 0.218),rgba(255, 156, 173, 0.361), rgba(255, 112, 136, 0.218));
+    background: linear-gradient(to left, rgba(255, 112, 136, 0.959),rgba(255, 156, 173, 0.862), rgba(255, 112, 136, 0.959));
     max-width: 120em;
     padding: 5px;
     text-align: center;
     border-bottom-width: 1px;
-    border-bottom-color: rgba(0, 0, 0, 0.514);
+    border-bottom-color: rgba(0, 0, 0, 0.548);
     border-bottom-style: solid;
-    box-shadow: 0px 2px 8px rgb(0 0 0 / 35%);
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.327)
 }
 
 header h1{
     font-family: var(--fonte-sundae);
     font-weight: normal;
     font-size: 6vw;
-    padding: 10px;
+    padding: 10px 0px;
+    margin: auto;
+    width: 10em;
+    border: 5px solid var(--cor-1b);
+    border-radius: 15px;
 }
 
 header p{
     font-family: var(--fonte-pricipal);
     font-weight: bold;
     margin-bottom: 10px;
-    font-size: 2.5em;
+    font-size: 3.5vw;
 }
 
 header a{
@@ -102,7 +94,7 @@ header a{
 }
 
 header a:hover{
-    background-color: var(--cor-5);
+    background-color: var(--cor-2);
 }
 
 main{
@@ -112,7 +104,7 @@ main{
     padding: 10px;
 }
 
-img.img-mora{
+img{
     display: block;
     margin: auto;
 }
